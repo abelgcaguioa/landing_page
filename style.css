@@ -1,137 +1,179 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+
 }
-a{
-    text-decoration: none;
-    color: white;
-}
-.header{
-    background-color: rgb(72, 72, 161);
-    color: white;
-    list-style: none;
-    padding: 50px;
-    }
-.navbar{
+.header-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-left: 50px;
-    margin-right:50px;
-    
+    padding: 100px;
+    padding-top: 50px;
+    background-color: #27374D;
+    color: #DDE6ED;
+    font-weight: bold;
 }
-.headerlogo{
-    font-size: 30px;
-    font-weight: 900;
-    color: white;
-}
-.links{
+
+ul {
+    list-style-type: none;
     display: flex;
-    gap: 10px;
+    gap: 50px;
+}
+.midheader-container {
+    display: flex;
+    background-color: #27374D;
+    color: #DDE6ED;
+    padding-bottom: 50px;
+    
 
 }
-.headerBody{
-    display: flex;
-    padding-top: 180px;
-    padding-bottom: 180px;
-    justify-content: space-between ;
-    gap: 20px;
-    flex-wrap: nowrap;
-    margin: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    
-}
-.bodyLeftPane {
+.leftpane {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    
+    gap: 40px;
+    padding-left: 100px;
+    padding-right: 50px;
+    min-width: 40%;
 }
-.bodyRightPane{
-
-}
-.title{
+.heading {
     font-size: 40px;
-}
-#button{
-    background-color: rgb(79, 79, 219) ;
-    height: 25px;
-    width: 90px;
-    border-radius: 9px;
-    color: white;
     font-weight: bolder;
 }
-.secondPanel{
+.intro {
+    font-size: 20px;
+}
+.button1 {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #9DB2BF;
+    border: 2px solid #9DB2BF;
+    color: #DDE6ED;
+}
+.rightpane {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
-    font-size: 30px;
-}
-.panelInfo{
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-.tileContainer {
-    display: flex;
     gap: 20px;
-    justify-content: space-between;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 50px;
+    padding-right: 100px;
+    min-width: 40%;
+
+}
+.mesbg {
+    border-radius: 20px;
+}
+.lowmidheader-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-
-}
-.tiles{
-    display: flex;
+    padding-top: 50px;
     gap: 20px;
-    font-size: 15px;
-
 }
-.tile1,
-.tile2,
-.tile3,
-.tile4{
+.heading2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.faction-tiles {
     display: flex;
-    flex-direction: column;
-}
-.pic1,
-.pic2,
-.pic3,
-.pic4 {
-    height: 150px;
-    border: 1px solid black;
-    height: 200px;
-    width: 200px;
+    flex-direction: row;
+    padding: 100px;
+    align-content: center;
     justify-content: center;
 }
-.description1 {
-    height: 150px;
-    text-align: center;
+.minasjpg,
+.rohanjpg,
+.mordorjpg,
+.isendgardjpg {
+    display: flex;
+
+}
+.minasimg,
+.rohanimg,
+.mordorimg,
+.isengardimg {
+    height: 200px;
+    width: 300px;
+}
+.minasinfo, 
+.rohaninfo, 
+.mordorinfo,
+.isengardinfo {
+    display: flex;
+    min-width: 200px;
+    align-content: center;
+
+}
+.minas,
+.rohan,
+.mordor,
+.isengard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 70px;
+
+}
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #9DB2BF;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .quote {
     display: flex;
-    flex-direction: column;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 250px;
-    padding-right: 250px;
-    background-color: rgb(199, 198, 198);
-}
-.author{
-    display: flex;
-    justify-content: flex-end;
-    font-size: 40px;
-    font-style: italic;
-    font-weight: bolder;
-    padding-top: 40px;
-    padding-right: 60px;
-}
-.saying {
-    font-size: 40px;
-    font-style: italic;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 20px;
 
+
+}
+.author {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 250px;
+    padding-top: 20px;
+
+    font-size: 25px;
+    font-weight: bolder;
+}
+.action-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:#27374D ;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    color: #DDE6ED;
+    border-radius: 20px;
+    
+
+}
+.leftaction {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.action {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.butsign {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #9DB2BF;
+    color: #DDE6ED;
+    font-weight: bolder;
+}
+.rightaction {
+    align-self: center;
 }
